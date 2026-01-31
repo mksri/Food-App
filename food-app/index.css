@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+}
+
+.logo{
+    width: 100px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+}
+
+.res-card{
+    width: 200px;
+    height: 300px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.res-card:hover{
+     border: 1px solid black;
+     cursor:pointer;
+}
+
+.search-bar{
+    padding: 20px;
+}
+
+.food-img{
+    width: 200px;
+    height: 150px
+}
