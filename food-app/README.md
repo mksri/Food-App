@@ -11,3 +11,9 @@ import Component from Path;
 
 export const Component;
 import { } from Path;
+
+#React Hooks
+
+(Normal JS utility function)
+-useState() - Superpowerful state variable in react
+-useEffect()
