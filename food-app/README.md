@@ -1,0 +1,13 @@
+#Food ordering app
+
+Two types of export and import
+
+1) Default Export/Import 
+
+export default Component;
+import Component from Path;
+
+2) Named Export/Import
+
+export const Component;
+import { } from Path;
