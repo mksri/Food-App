@@ -1,10 +1,27 @@
 import RestaurentCard from "./RestaurentCard";
 import dataObj from "../utils/mockData";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 const Body = () =>{
 
-    const [listRestaurent, setListRestaurent] = useState(dataObj.restaurants);
+    const [listRestaurent, setListRestaurent] = useState([]);
+
+    useEffect( () =>{
+        console.log("Use effect is called after body component render finsihes");
+        fetchData();
+
+    }, []);
+
+    const fetchData = async () =>{
+        const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.31500&lng=83.00580&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+
+
+        const json = await data.json();
+        console.log(json);
+        setListRestaurent(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+    }
+
+    
 
     return(
         <div className="body">
