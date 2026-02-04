@@ -14,6 +14,7 @@ const Body = () =>{
         fetchData();
 
     }, []);
+    
 
     console.log("BOdy rendered");
 
