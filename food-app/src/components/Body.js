@@ -27,8 +27,8 @@ const Body = () =>{
 
         //optional chaining
         
-        setListRestaurent(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredRestaurent(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setListRestaurent(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilteredRestaurent(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
 
