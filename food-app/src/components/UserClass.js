@@ -8,31 +8,32 @@ class UserClass extends React.Component {
         super(props);
         console.log("constructor");
         this.state = {
-            count: 0,
-            count2: 1
+            userInfo:{
+                login: "dummy",
+                location:"Default"
+            }
         }
     }
 
-    componentDidMount(){
-        console.log("componentDidMount");
+   async componentDidMount(){
+
+        const data = await fetch("https://api.github.com/users/mksri");
+        const json = await data.json();
+        console.log(json)
+          this.setState({
+            userInfo: json
+          }) 
+        
     }
    
 
     render(){
 
-        const { name , location } = this.props;
-         console.log("render");
-
-
+        const { login , location } = this.state.userInfo;
         return(
        <div>
-       <Child1 name={"From first Child"}/>
-       <Child1 name={"From second Child"}/>
-       <Child1 name={"From third Child"}/>
-       <Child1 name={"From fourth Child"}/>
-       <Child1 name={"From fifth Child"}/>
-       <Child1 name={"From six Child"}/>
-       <Child1 name={"From seven Child"}/>
+       <Child1 name={"From first Child"}/>  
+        <h3>{login}</h3>
 </div>
         )
     }

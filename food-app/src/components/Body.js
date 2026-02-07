@@ -2,6 +2,7 @@ import RestaurentCard from "./RestaurentCard";
 import dataObj from "../utils/mockData";
 import { useState , useEffect } from "react";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () =>{
 
@@ -27,10 +28,14 @@ const Body = () =>{
 
         //optional chaining
         
-        setListRestaurent(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredRestaurent(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setListRestaurent(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilteredRestaurent(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
+    if(useOnlineStatus === false)
+        return(
+    <h1>You are offline</h1>
+    )
 
     return listRestaurent.length === 0 ? <Shimmer/> : (
         <div className="body">
