@@ -15,6 +15,7 @@ const dataObj = {
                                             "avgRating": 4.3,
                                             "parentId": "721",
                                             "avgRatingString": "4.3",
+                                            "promoted": true,
                                             "totalRatingsString": "9.2K+",
                                             "sla": {
                                                 "deliveryTime": 38,
@@ -99,6 +100,7 @@ const dataObj = {
                                                 "American"
                                             ],
                                             "avgRating": 4.3,
+                                            "promoted": true,
                                             "parentId": "166",
                                             "avgRatingString": "4.3",
                                             "totalRatingsString": "46K+",
@@ -267,6 +269,7 @@ const dataObj = {
                                                 "Desserts"
                                             ],
                                             "avgRating": 4.7,
+                                             "promoted": false,
                                             "veg": true,
                                             "parentId": "12175",
                                             "avgRatingString": "4.7",
