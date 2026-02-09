@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import useRestaurentMenu from "../utils/useRestaurentMenu";
 import dataObj from "../utils/mockData";
 import { CDN_URL } from "../utils/constants";
+import RestaurentCategory from "./RestaurentCategory";
 
 
 const RestaurentMenu = () =>{
@@ -14,17 +15,18 @@ const RestaurentMenu = () =>{
         (res) => res.info.id === resId
       )
 
-      console.log(restaurent)
+      console.log(restaurent);
+
     
 
       if (resInfo === null) return (<Shimmer/>);
 
 
     return  (
-        <div className="min-h-screen flex items-center justify-center from-slate-50 to-slate-100 px-4 border-2">
-            <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <img className="h-50 w-full object-cover" src={ CDN_URL + restaurent.info.cloudinaryImageId}></img>
-            <div className="p-6 text-center space-y-4">
+        <div className="max-w-6xl mx-auto px-6 mt-10">
+            <div className=" items-start gap-8 m-20 text-center">
+            <img className="h-60 w-100 mx-70 object-cover" src={ CDN_URL + restaurent.info.cloudinaryImageId}></img>
+            <div className="m-10 bg-white overflow-hidden">
       <h1 className="text-2xl font-extrabold text-gray-800">
         {restaurent.info.name}
       </h1>
@@ -39,11 +41,17 @@ const RestaurentMenu = () =>{
        {restaurent.info.costForTwo}
       </p>
 
-      <button className="mt-4 w-full rounded-xl bg-orange-500 py-3 text-white font-semibold shadow-md hover:bg-orange-600 hover:scale-105 transition">
-        View Menu
-      </button>
     </div>
         </div>
+        <div className="-auto gap-4 bg-green-50 px-4 py-2 m-20 rounded-lg">
+       {restaurent.info.menu.map((category) => 
+
+       (
+        <RestaurentCategory key={category.categoryId} data={category}/>
+       )
+
+    )}
+    </div>
         </div>
     )
 }

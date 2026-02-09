@@ -99,6 +99,89 @@ const dataObj = {
                                                 "Burgers",
                                                 "American"
                                             ],
+                                             "menu": [
+                                            {
+                                                "categoryId": "recommended",
+                                                "categoryName": "Recommended",
+                                                "isOpen": true,
+                                                "items": [
+                                                {
+                                                    "id": "item_1",
+                                                    "name": "Whopper",
+                                                    "price": 199,
+                                                    "description": "Flame-grilled patty with fresh veggies and mayo",
+                                                    "imageId": "whopper.jpg",
+                                                    "isVeg": false,
+                                                    "rating": 4.5
+                                                },
+                                                {
+                                                    "id": "item_2",
+                                                    "name": "Veg Whopper",
+                                                    "price": 179,
+                                                    "description": "Crispy veg patty with lettuce and creamy mayo",
+                                                    "imageId": "veg_whopper.jpg",
+                                                    "isVeg": true,
+                                                    "rating": 4.2
+                                                }
+                                                ]
+                                            },
+                                            {
+                                                "categoryId": "burgers",
+                                                "categoryName": "Burgers",
+                                                "isOpen": false,
+                                                "items": [
+                                                {
+                                                    "id": "item_3",
+                                                    "name": "Chicken Crispy Burger",
+                                                    "price": 149,
+                                                    "description": "Crunchy chicken patty with spicy sauce",
+                                                    "imageId": "chicken_burger.jpg",
+                                                    "isVeg": false,
+                                                    "rating": 4.4
+                                                },
+                                                {
+                                                    "id": "item_4",
+                                                    "name": "Paneer King Burger",
+                                                    "price": 169,
+                                                    "description": "Grilled paneer patty with royal sauce",
+                                                    "imageId": "paneer_burger.jpg",
+                                                    "isVeg": true,
+                                                    "rating": 4.3
+                                                }
+                                                ]
+                                            },
+                                            {
+                                                "categoryId": "sides",
+                                                "categoryName": "Sides",
+                                                "isOpen": false,
+                                                "items": [
+                                                {
+                                                    "id": "item_5",
+                                                    "name": "French Fries",
+                                                    "price": 99,
+                                                    "description": "Golden crispy fries",
+                                                    "imageId": "fries.jpg",
+                                                    "isVeg": true,
+                                                    "rating": 4.1
+                                                }
+                                                ]
+                                            },
+                                            {
+                                                "categoryId": "beverages",
+                                                "categoryName": "Beverages",
+                                                "isOpen": false,
+                                                "items": [
+                                                {
+                                                    "id": "item_6",
+                                                    "name": "Coca Cola",
+                                                    "price": 79,
+                                                    "description": "Chilled fizzy drink",
+                                                    "imageId": "coke.jpg",
+                                                    "isVeg": true
+                                                }
+                                                ]
+    }
+                                               ],
                                             "avgRating": 4.3,
                                             "promoted": true,
                                             "parentId": "166",
@@ -730,6 +813,89 @@ const dataObj = {
                                                 "Fast Food",
                                                 "Rolls & Wraps"
                                             ],
+                                            "menu": [
+                                            {
+                                                "categoryId": "recommended",
+                                                "categoryName": "Recommended",
+                                                "isOpen": true,
+                                                "items": [
+                                                {
+                                                    "id": "item_1",
+                                                    "name": "Whopper",
+                                                    "price": 199,
+                                                    "description": "Flame-grilled patty with fresh veggies and mayo",
+                                                    "imageId": "whopper.jpg",
+                                                    "isVeg": false,
+                                                    "rating": 4.5
+                                                },
+                                                {
+                                                    "id": "item_2",
+                                                    "name": "Veg Whopper",
+                                                    "price": 179,
+                                                    "description": "Crispy veg patty with lettuce and creamy mayo",
+                                                    "imageId": "veg_whopper.jpg",
+                                                    "isVeg": true,
+                                                    "rating": 4.2
+                                                }
+                                                ]
+                                            },
+                                            {
+                                                "categoryId": "burgers",
+                                                "categoryName": "Burgers",
+                                                "isOpen": false,
+                                                "items": [
+                                                {
+                                                    "id": "item_3",
+                                                    "name": "Chicken Crispy Burger",
+                                                    "price": 149,
+                                                    "description": "Crunchy chicken patty with spicy sauce",
+                                                    "imageId": "chicken_burger.jpg",
+                                                    "isVeg": false,
+                                                    "rating": 4.4
+                                                },
+                                                {
+                                                    "id": "item_4",
+                                                    "name": "Paneer King Burger",
+                                                    "price": 169,
+                                                    "description": "Grilled paneer patty with royal sauce",
+                                                    "imageId": "paneer_burger.jpg",
+                                                    "isVeg": true,
+                                                    "rating": 4.3
+                                                }
+                                                ]
+                                            },
+                                            {
+                                                "categoryId": "sides",
+                                                "categoryName": "Sides",
+                                                "isOpen": false,
+                                                "items": [
+                                                {
+                                                    "id": "item_5",
+                                                    "name": "French Fries",
+                                                    "price": 99,
+                                                    "description": "Golden crispy fries",
+                                                    "imageId": "fries.jpg",
+                                                    "isVeg": true,
+                                                    "rating": 4.1
+                                                }
+                                                ]
+                                            },
+                                            {
+                                                "categoryId": "beverages",
+                                                "categoryName": "Beverages",
+                                                "isOpen": false,
+                                                "items": [
+                                                {
+                                                    "id": "item_6",
+                                                    "name": "Coca Cola",
+                                                    "price": 79,
+                                                    "description": "Chilled fizzy drink",
+                                                    "imageId": "coke.jpg",
+                                                    "isVeg": true
+                                                }
+                                                ]
+    }
+                                               ],
                                             "avgRating": 4.3,
                                             "parentId": "547",
                                             "avgRatingString": "4.3",
