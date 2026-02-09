@@ -3,13 +3,13 @@ import { useState } from "react";
 
 const RestaurentCategory = ({data , showItems , setShowIndex}) => {
 
-    //const [ showItems, setShowItems ] = useState(false);
-   // console.log("data",data)
+    /* const [ showItems, setShowItems ] = useState(false);
+   / console.log("data",data)
 
     const handleClick = () =>{
         setShowItems(!showItems);
         console.log("handleclick")
-    }
+    }*/
 
     return(
         <div>
