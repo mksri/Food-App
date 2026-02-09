@@ -4,9 +4,12 @@ import useRestaurentMenu from "../utils/useRestaurentMenu";
 import dataObj from "../utils/mockData";
 import { CDN_URL } from "../utils/constants";
 import RestaurentCategory from "./RestaurentCategory";
+import {useState } from "react";
 
 
 const RestaurentMenu = () =>{
+
+  const [showIndex, setShowIndex] = useState(0);
     const { resId} = useParams();
 
       const resInfo = useRestaurentMenu(resId)
@@ -44,10 +47,14 @@ const RestaurentMenu = () =>{
     </div>
         </div>
         <div className="-auto gap-4 bg-green-50 px-4 py-2 m-20 rounded-lg">
-       {restaurent.info.menu.map((category) => 
-
+       {restaurent.info.menu.map((category ,index) => 
+// Controlled Component 
        (
-        <RestaurentCategory key={category.categoryId} data={category}/>
+        <RestaurentCategory 
+        key={category.categoryId} 
+        data={category}
+        showItems={index === showIndex ? true : false }
+        setShowIndex={() =>  setShowIndex(index)}/>
        )
 
     )}

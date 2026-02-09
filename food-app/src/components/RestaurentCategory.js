@@ -1,9 +1,9 @@
 import ItemsList from "./ItemsList";
 import { useState } from "react";
 
-const RestaurentCategory = ({data}) => {
+const RestaurentCategory = ({data , showItems , setShowIndex}) => {
 
-    const [ showItems, setShowItems ] = useState(false);
+    //const [ showItems, setShowItems ] = useState(false);
    // console.log("data",data)
 
     const handleClick = () =>{
@@ -15,7 +15,7 @@ const RestaurentCategory = ({data}) => {
         <div>
             {/* Accordian Header */}
 
-            <div className="w-full bg-green-50 shadow-2xl p-4 cursor-pointer" onClick={handleClick}>
+            <div className="w-full bg-green-50 shadow-2xl p-4 cursor-pointer" onClick={setShowIndex}>
                 <span>  
                     {data.categoryName}                 
                 </span>
